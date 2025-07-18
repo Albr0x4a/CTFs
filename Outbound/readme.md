@@ -56,7 +56,7 @@
 
 ![](./screenshots/decrypt.png)
 
-- Después de localizar la función, nos la copiamos a un archivo **php** y introducimos los datos necesarios para que funcione.
+- Después de localizar la función, nos la copiamos a un archivo **php** e introducimos los datos necesarios para que funcione.
 
 ```php
 <?php 
