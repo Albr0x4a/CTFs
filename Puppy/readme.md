@@ -4,6 +4,8 @@
 - **Fecha de resolución:** 26/07/2025
 - **Autor:** Albr_0x4a
 
+- Enlace a mi archivo de notas para más detalle: [notes.md](./notes.md)
+
 ---
 
 ## Escaneo de Puertos con Nmap:

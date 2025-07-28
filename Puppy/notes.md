@@ -1,4 +1,4 @@
-# PUPPYV
+# PUPPY
 
 - Creds: user: `levi.james` pass: `KingofAkron2025!`
 

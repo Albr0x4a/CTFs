@@ -15,5 +15,6 @@ Bienvenido a mi repositorio writeups de CTFs y máquinas de Hack The Box. Aquí 
 | [Love](./Love/readme.md)| Fácil | HTB |16/07/2025 |
 | [Outbound](./Outbound/readme.md)| Fácil | HTB | 18/07/2025|
 | [Puppy](./Puppy/readme.md) | Media | HTB | 26/07/2025 |
+| [Environment](./Environment/readme.md) | Media | HTB | 28/07/2025 |
 
 
