@@ -38,7 +38,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ## Explorando Servicio Web
 
-- Al entrar en la página, no vemos gran cosa, por lo que procedemos a hacer fuzzing a la web en busca de directorio u otros archivos:
+- Al entrar en la página, no vemos gran cosa, por lo que procedemos a hacer fuzzing a la web en busca de directorios y otros archivos:
 
 ```bash
 gobuster dir -w /usr/share/wordlists/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -u http://environment.htb/ -t 100 -x php,txt,xml,log
@@ -112,7 +112,7 @@ POST /login?--env=preprod HTTP/1.1
 (printf '\x47\x49\x46\x38\x37\x61'; cat rce.php) > reverse.php
 ```
 
-- Nuevamente obtenemos un error al subir el archivo, pero si modificamos la extensión a `.png`, se sube correctamente, por lo que llegamos a la conclusión que se están validando tanto los `magic bytes` como la extensión. Después de un rato probando con diferentes extensiones, tenemos áxito con `.php.` y obtenemos una shell.
+- Nuevamente obtenemos un error al subir el archivo, pero si modificamos la extensión a `.png`, se sube correctamente, por lo que llegamos a la conclusión que se están validando tanto los `magic bytes` como la extensión. Después de un rato probando con diferentes extensiones, tenemos éxito con `.php.` y obtenemos una shell.
 
 ![](./screenshots/reverse_shell.png)
 
