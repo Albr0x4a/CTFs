@@ -37,7 +37,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 ## Explorando Servicio Web
 
-- Primero que todo añadimos `searcher.htb` al archivo `/etc/hosts`, luego entramos a la página web y nos encontramos con un buscador web, y después de enumerar un poco encontramos que se está utilizando "searchor 2.4.0", con una simple búsqueda en internet se puede ver que está versión posee una vulnerabilidad de ejecución remota de código:
+- Primero que todo añadimos `searcher.htb` al archivo `/etc/hosts`, luego entramos a la página web y nos encontramos con un buscador web, y después de enumerar un poco encontramos que se está utilizando `searchor 2.4.0`, con una simple búsqueda en internet se puede ver que está versión posee una vulnerabilidad de ejecución remota de código:
   
 ![](./screenshots/web_page.png)
 
@@ -198,7 +198,7 @@ svc@busqueda:/var/www/app/.git$ sudo /usr/bin/python3 /opt/scripts/system-checku
             print('Something went wrong')
             exit(1)
 ```
-- Si ejecutamos el script con la opción `full-checkup` en otro directorio que no sea `/opt/scripts`, obtenemos un error, lo cual nos confirma nuestro planteamiento anterior:
+- Si ejecutamos el script con la opción `full-checkup` en otro directorio que no sea `/opt/scripts/`, obtenemos un error, lo cual nos confirma nuestro planteamiento anterior:
 
 ```bash
 svc@busqueda:/var/www/app/.git$ sudo /usr/bin/python3 /opt/scripts/system-checkup.py full-checkup
@@ -233,5 +233,4 @@ bash-5.1# whoami
 root
 bash-5.1# ls /root/
 ecosystem.config.js  root.txt  scripts	snap
-bash-5.1# 
 ```
