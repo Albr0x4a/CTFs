@@ -154,7 +154,7 @@ ________________________________________________
 
 - Después de un rato revisando el código, llaman varias cosas la atención:
  
-- El archivo `.htaccess`, está configurado para denegar todas las solicitudes que no contengan el header `Special-Dev: only4dev`, este parece ser el motivo por el cual no podemos acceder a `dev.siteisup.htb`, y nos confirma estos archivos pertenecen a ese sitio web.
+- El archivo `.htaccess`, está configurado para denegar todas las solicitudes que no contengan el header `Special-Dev: only4dev`, este parece ser el motivo por el cual no podemos acceder a `dev.siteisup.htb`, y nos confirma que estos archivos pertenecen a ese sitio web.
   
 ```bash
 ❯ cat .htaccess
@@ -333,7 +333,7 @@ $phar->stopBuffering();
 ![](./screenshots/phpinfo_disable_functions.png)
 
 
-- Después de una rápida búsqueda en internet sobre como bypasear esto nos encontramos con la herramienta [dfunc-bypasser](https://github.com/teambi0s/dfunc-bypasser), la cual analiza el phpinfo y nos muestra funciones que no se encuentran deshabilitadas y que se pueden utilizar para ejecutar código.
+- Después de una rápida búsqueda en internet sobre como bypasear esto, nos encontramos con la herramienta [dfunc-bypasser](https://github.com/teambi0s/dfunc-bypasser), la cual analiza el phpinfo y nos muestra funciones que no se encuentran deshabilitadas y que se pueden utilizar para ejecutar código.
 
 - Para utilizar la herramienta podemos pasarle directamente la url hacia la salida de phpinfo, o podemos pasarle un archivo que contenga esta misma información. Por motivos de facilidad, puesto que el script utiliza python 2 y tuve problemas con la librería `requests`, decidí eliminar la línea de código donde se importa esta librería y utilizar la opción de pasarle un archivo. Ten en cuenta que si lo vas a hacer mediante la url tienes que modificar el código para agregar el header `Special-Dev: only4dev`, necesario para acceder al sitio web.
 
@@ -415,7 +415,7 @@ $phar->stopBuffering();
  content   nmap   scripts   revshell.phar   shell.php
 ```
 
-- Luego nos ponemos en escucha con `netcat`, subimos el archivo y accedemos a el de la misma forma que anteriormente.
+- Luego nos ponemos en escucha con `netcat`, subimos el archivo y accedemos a él de la misma forma que anteriormente.
 
 - Al acceder al archivo recibimos la conexión en nuestra máquina:
   
@@ -452,7 +452,7 @@ cat: user.txt: Permission denied
 www-data@updown:/home/developer$ 
 ```
 
-- También al listar todos los directorios podemos ver el directorio `.ssh`, al cual no tenemos permisos de acceder, pero si podemos obtener alguna clave ssh podríamos conectarnos como el usuario `developer`:
+- También al listar todos los directorios podemos ver el directorio `.ssh`, al cual no tenemos permisos de acceder, pero si lograramos obtener alguna clave ssh podríamos conectarnos como el usuario `developer`:
 
 ```bash
 www-data@updown:/home/developer$ ls -a
