@@ -1,6 +1,6 @@
 # CTFs
 
-Bienvenido a mi repositorio writeups de CTFs y máquinas de Hack The Box. Aquí iré documentando paso a paso la resolución de máquinas, mostrando la metodología, herramientas y aprendizajes obtenidos.
+Bienvenido a mi repositorio de writeups de CTFs y máquinas de Hack The Box. Aquí iré documentando paso a paso la resolución de máquinas, mostrando la metodología, herramientas y aprendizajes obtenidos.
 
 ## Estructura del repositorio
 
@@ -18,4 +18,5 @@ Bienvenido a mi repositorio writeups de CTFs y máquinas de Hack The Box. Aquí 
 | [Environment](./Environment/readme.md) | Media | HTB | 28/07/2025 |
 | [Busqueda](./Busqueda/readme.md) | Fácil | HTB | 11/11/2025 |
 | [Escape](./Escape/readme.md) | Media | HTB | 14/11/2025 | 
-| [Forest](./Forest/readme.md) | Fácil |HTB | 17/11/2025 |
+| [Forest](./Forest/readme.md) | Fácil | HTB | 17/11/2025 |
+| [UpDown](./UpDown/readme.md) | Media | HTB | 19/11/2025 |
