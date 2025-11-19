@@ -37,7 +37,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 ```
 ## Enumeración
 
-- Empezamos entrando a la página web, la cual posee una funcionalidad para checkear si un sitio web está corriendo o no, en la parte inferior de la página vemos un dominio `siteisup.htb` que agregamos a nuestro archivo `/etc/hosts`
+- Empezamos entrando a la página web, la cual posee una funcionalidad para comprobar si un sitio web está corriendo o no, en la parte inferior de la página vemos un dominio `siteisup.htb` que agregamos a nuestro archivo `/etc/hosts`
 
 ![](./screenshots/siteisup.png)
 
